@@ -9,7 +9,12 @@ def encode_password(password):   # Kwailan Rosell
 
 
 def decode_password(encoded_password):
-    pass
+    decoded_password = ""
+    for char in encoded_password:
+        decoded_char = str(int(char) - 3)
+        decoded_password += decoded_char
+    
+    return decoded_password
 
 
 def main():
